@@ -2,3 +2,56 @@
     width: 100%;
     max-width: 640px; 
 }
+
+body {
+    background-color: #ccc;
+    margin: 20px 0;
+    padding: 0;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    color: 333;
+}
+
+div#top_wrapper {
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div.message {
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.subscription {
+    margin-bottom: 60px;
+}
+
+h3 {
+    width: 80%;
+    border: none;
+    border-bottom: solid;
+    border-color:#666;
+}
+
+.mensekijiko {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.modelviewer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.modelviewer model-viewer {
+    width: 640px;
+    height: 480px;
+    margin: 0 auto;
+}

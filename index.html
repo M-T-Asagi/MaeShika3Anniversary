@@ -4,22 +4,69 @@
         <link href="./css.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-	<model-viewer src="MaeShika3Shunen.glb"
-                  ios-src="MaeShika3Shunen.usdz"
-                  background-color="#000000"
-                  shadow-intensity="1"
-                  camera-controls
-                  autoplay
-                  interaction-prompt="auto"
-                  auto-rotate ar magic-leap></model-viewer>
-	<br /><br />
-	<div class"usdzitem">
-	    <p class="usdzlink">
-	        <a rel="ar" href="./MaeShika3Shunen.usdz">
-                    <img src="./Thumbnail.png">
-                </a>
-            </p>
-	</div>
+        <div id="top_wrapper">
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+            <h1>#メエシカ3周年 おめでとう！</h1>
+            
+            <div class="message">
+                <a href="https://twitter.com/search?q=%23%E3%83%A1%E3%82%A8%E3%82%B7%E3%82%AB3%E5%91%A8%E5%B9%B4">#メエシカ3周年</a>をお祝いして、メエシカのARを作りました！<br />
+                2人へのお祝いの気持ち、少しでも伝われば嬉しいです！<br />
+                おめでとうメエシカ！ありがとうメエシカ！そして結婚おめでとう！
+            </div>
+            
+            <div class="subscription">
+                <h3>ARの遊び方</h3>
+                
+                <div class="mensekijiko">
+                    このARは割と新しめのiPhone, iPad, Android端末で動作します！<br />
+                    古めの端末をお持ちの方、PCからアクセスされた方は、もしかしたらARをお楽しみいただけないかもしれません。ごめんなさい🙇<br />
+                    スマートフォンからアクセスしやすいように、QRコードを下に置いておくので、良かったらスマートフォンで再度お試し下さい。<br />
+                </div>
+
+                <div class="shudai">
+                    ARは、下に表示されている3Dプレビューの右下にある、箱みたいなのをタップすると動きます。<br />
+                    ARが始まると、まず最初に周囲の環境を読み取るプログラムが動くので、
+                        ARを置きたい場所（できるだけ平面で片付いている場所が理想です）を中心に写すようにしてスマートフォンを動かしてみてください。<br />
+                    通常は、数秒程度スマートフォンを動かすと、3Dオブジェクトが配置され、ARが楽しめるようになります。<br />
+                    もしうまくいかない場合は、
+                    <ul>
+                        <li>部屋が明るいか</li>
+                        <li>逆に光が強すぎないか</li>
+                        <li>ARを置きたい場所にノートを広げられる程度の平面が確保されているか</li>
+                        <li>ARを置きたい場所が無地の平面ではないか（ある程度模様などがある方が認識率がよいです）</li>
+                    </ul>
+                    などをご確認ください。<br />
+                </div>
+
+                <div class="saigotukoku">
+                    <h4>最後に</h4>
+                    ARはとても楽しい物ですが、夢中になりすぎると事故の危険もあります<br />
+                    ARを遊ばれる際は、ぜひ、周囲の安全を確認してからお楽しみください！
+                </div>
+
+                <div class="shomei">麻木浅葱 - Twitter (<a href="https://twitter.com/asagi_00a3af" target="_blank" rel="noopener noreferrer">@asagi_00a3af</a>)</div>
+            </div>
+
+            <div class="modelviewer">
+                <model-viewer
+                    src="MaeShika3Shunen.glb"
+                    ios-src="MaeShika3Shunen.usdz"
+                    background-color="#000000"
+                    shadow-intensity="1"
+                    camera-controls
+                    autoplay
+                    interaction-prompt="auto"
+                    auto-rotate ar magic-leap></model-viewer>
+            </div>
+            <!-- AR quick look使いたいけどAndroid都の切り分け処理が面倒くさい
+            <div class="usdzitem">
+                <p class="usdzlink">
+                    <a rel="ar" href="./MaeShika3Shunen.usdz">
+                            <img src="./Thumbnail.png">
+                        </a>
+                    </p>
+            </div>
+            -->
+    </div>
     </body>
 </html>
